@@ -344,7 +344,12 @@ export default class Presentation extends React.Component {
           </Appear>
           <Appear>
             <Text caps fit textColor="primary">
-              State
+              Component state
+            </Text>
+          </Appear>
+          <Appear>
+            <Text caps fit textColor="primary">
+              Component lifecycle
             </Text>
           </Appear>
         </Slide>
@@ -415,6 +420,81 @@ export default class Presentation extends React.Component {
             Component state
           </Heading>
           <TodoApp />
+        </Slide>
+        <Slide id="react-mount-lifecyle">
+          <Heading fit caps>
+            Mounting lifecycle
+          </Heading>
+          <Appear>
+            <Text>
+              constructor()
+            </Text>
+          </Appear>
+          <Appear>
+            <Text>
+              componentWillMount()
+            </Text>
+          </Appear>
+          <Appear>
+            <Text>
+              render()
+            </Text>
+          </Appear>
+          <Appear>
+            <Text>
+              componentDidMount()
+            </Text>
+          </Appear>
+        </Slide>
+        <Slide id="react-update-lifecyle">
+          <Heading fit caps>
+            Update lifecycle
+          </Heading>
+          <Appear>
+            <Text>
+              componentWillReceiveProps()
+            </Text>
+          </Appear>
+          <Appear>
+            <Text>
+              shouldComponentUpdate()
+            </Text>
+          </Appear>
+          <Appear>
+            <Text>
+              componentWillUpdate()
+            </Text>
+          </Appear>
+          <Appear>
+            <Text>
+              render()
+            </Text>
+          </Appear>
+          <Appear>
+            <Text>
+              componentDidUpdate()
+            </Text>
+          </Appear>
+        </Slide>
+        <Slide id="react-unmount-lifecyle">
+          <Heading fit caps>
+            Unmount lifecycle
+          </Heading>
+          <Appear>
+            <Text>
+              componentWillUnmount()
+            </Text>
+          </Appear>
+        </Slide>
+        <Slide id="react-error-lifecyle">
+          <Heading fit caps>
+            Error lifecycle
+          </Heading>
+          <Appear>
+            <Text>
+              componentDidCatch()
+            </Text>
+          </Appear>
         </Slide>
         <Slide id="advanced-react" bgImage={images.start.replace('/', '')} bgDarken={0.5} bgColor="secondary">
           <Heading fit caps textColor="tertiary">
