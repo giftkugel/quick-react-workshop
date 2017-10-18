@@ -44,7 +44,8 @@ const images = {
   school: require('../assets/school.jpg'),
   start: require('../assets/start.jpg'),
   paint: require('../assets/paint.jpg'),
-  micro: require('../assets/micro.jpg')
+  micro: require('../assets/micro.jpg'),
+  build: require('../assets/build.jpg')
 };
 
 preloader(images);
@@ -435,6 +436,21 @@ export default class Presentation extends React.Component {
             </Text>
           </Appear>
         </Slide>
+        <Slide id="react-dist" bgImage={images.build.replace('/', '')} bgDarken={0.5} bgColor="secondary">
+          <Heading fit caps textColor="tertiary">
+            Create a distribution
+          </Heading>
+          <Appear>
+            <Text fit caps textColor="primary">
+                Webpack
+            </Text>
+          </Appear>
+          <Appear>
+            <Text fit caps textColor="primary">
+                Build &#10132; Distribution
+            </Text>
+          </Appear>
+        </Slide>
         <Slide id="tests">
           <Heading fit caps>
             Tests
@@ -515,6 +531,9 @@ export default class Presentation extends React.Component {
           </div>
           <div>
             <Link textSize={20} href="https://static.pexels.com/photos/256262/pexels-photo-256262.jpeg">https://static.pexels.com/photos/256262/pexels-photo-256262.jpeg</Link>
+          </div>
+          <div>
+            <Link textSize={20} href="https://static.pexels.com/photos/162525/skyscraper-site-construction-building-162525.jpeg">https://static.pexels.com/photos/162525/skyscraper-site-construction-building-162525.jpeg</Link>
           </div>
         </Slide>
       </Deck>
