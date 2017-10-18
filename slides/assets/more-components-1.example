@@ -1,0 +1,20 @@
+class Hello extends React.Component {
+	render() {
+		return React.createElement('h2', null, `Hello ${this.props.name}`);
+	}
+}
+
+var rootElement =
+React.createElement('div', {}, 
+	React.createElement('h1', {}, 'Friends'),
+		React.createElement('ul', {},
+			React.createElement('li', {},
+				React.createElement(Hello, {name: 'Alice'}, ''),
+				React.createElement('a', {href: 'mailto:alice@my-friends-in-react.com'}, 'alice@my-friends-in-react.com')
+			),
+			React.createElement('li', {},
+				React.createElement(Hello, {name: 'Bob'}, ''),
+				React.createElement('a', {href: 'mailto:bob@my-friends-in-react.com'}, 'bob@my-friends-in-react.com')
+			)
+		)
+);

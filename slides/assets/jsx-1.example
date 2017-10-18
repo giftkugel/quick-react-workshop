@@ -1,0 +1,13 @@
+<Container>
+	<Title>Friends</Title>
+	<List>
+		<Item>
+			<Hello name='Alice' />
+			<Link href='mailto:alice@my-friends-in-react.com'>alice@my-friends-in-react.com</Link>
+		</Item>
+		<Item>
+			<Hello name='Bob' />
+			<Link href='mailto:bob@my-friends-in-react.com'>bob@my-friends-in-react.com</Link>
+		</Item>
+	</List>
+</Container>

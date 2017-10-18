@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			body {
+				background-color: linen;
+			}
+			h1 {
+				color: maroon;
+			} 
+		</style>
+	</head>
+	<body>
+		<h1>My First Heading</h1>
+		<p>My first paragraph</p>
+		<button>Click me!</button>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				$('button').click(function() {
+					$('body').append($('<p>' + new Date() + '</p>'));
+				});
+			});
+		</script>
+	</body>
+</html>

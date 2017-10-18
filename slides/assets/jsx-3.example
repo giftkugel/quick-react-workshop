@@ -1,0 +1,27 @@
+class Hello extends React.Component {
+	render() {
+		return (
+			<h2>{this.props.name}</h2>
+		);
+	}
+}
+
+class RootElement extends React.Component {
+	render() {
+		return (
+			<div>
+				<h1>Friends</h1>
+				<ul>
+					<li>
+						<Hello name='Alice' />
+						<a href='mailto:alice@my-friends-in-react.com'>alice@my-friends-in-react.com</a>
+					</li>
+					<li>
+						<Hello name='Bob' />
+						<a href='mailto:bob@my-friends-in-react.com'>bob@my-friends-in-react.com</a>
+					</li>
+				</ul>
+			</div>
+		);
+	}
+}

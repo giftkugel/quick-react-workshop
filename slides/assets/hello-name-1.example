@@ -1,0 +1,13 @@
+class Hello extends React.Component {
+	render() {
+		return React.createElement('h2', null, `Hello ${this.props.name}`);
+	}
+}
+
+// OR
+
+var Hello = React.createClass({
+	render: function() {
+		return `<h2>Hello ${this.props.name}</h2>`;
+	}
+});

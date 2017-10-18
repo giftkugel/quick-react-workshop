@@ -1,0 +1,1 @@
+var Hello = React.createElement('div', null, 'Hello World');
