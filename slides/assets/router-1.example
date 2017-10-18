@@ -1,0 +1,8 @@
+import { Route, Switch } from 'react-router'
+import { Home, About, Imprint } from './myApp'
+
+<Switch>
+  <Route exact path='/' component={Home}/>
+  <Route path='/about' component={About}/>
+  <Route path='/imprint' component={Imprint}/>
+</Switch>

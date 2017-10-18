@@ -531,6 +531,18 @@ export default class Presentation extends React.Component {
             </Text>
           </Appear>
         </Slide>
+        <Slide id="react-router">
+          <Heading fit caps>
+            Router
+          </Heading>
+          <CodePane
+            lang="jsx"
+            source={require('raw-loader!../assets/router-1.example')}
+            margin="20px auto"
+            overflow="overflow"
+            height="80vh"
+          />
+        </Slide>
         <Slide id="tests">
           <Heading fit caps>
             Tests
