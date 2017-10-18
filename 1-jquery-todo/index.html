@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JQuery Todo</title>
+		<style>
+			body {
+				background-color: linen;
+			}
+			h1 {
+				color: maroon;
+			} 
+		</style>
+	</head>
+	<body>
+		<h1>Todo list</h1>
+		<input name="todo" type="text">
+		<button>Add</button>
+		<ul>
+		</ul>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				$('button').click(function() {
+					var value = $('input').val();
+					if (value === null || value === '' || value.length == 0) {
+						return;
+					}
+					var item = $('<li style="cursor: pointer">' + value + '</li>');
+					$('input').val('');
+					item.click(function(event) {
+						var li = event.target;
+						li.remove();
+					});
+					$('ul').append(item);
+				});
+			});
+		</script>
+	</body>
+</html>

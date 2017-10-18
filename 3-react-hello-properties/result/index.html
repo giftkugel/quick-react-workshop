@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Hello Name</title>
+	</head>
+	<body>
+		<div id="root"></div>
+
+		<script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+		<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+		<script>
+			// Use ES6 Class to extend a React Component and ES6 Template-String to create the Hello-String
+			class Hello extends React.Component {
+				render() {
+					return React.createElement('h2', null, `Hello ${this.props.name}`);
+				}
+			}
+
+			// Use ReactDOM renderer to render the React Components into the DOM
+			ReactDOM.render(React.createElement(Hello, {name: 'Foo'}, null), document.getElementById('root'));
+		</script>
+	</body>
+</html>

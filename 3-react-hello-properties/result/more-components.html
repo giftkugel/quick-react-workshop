@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Component madness</title>
+	</head>
+	<body>
+		<div id="root"></div>
+
+		<script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+		<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+		<script>
+			// Use ES6 Class to extend a React Component and ES6 Template-String to create the Hello-String
+			class Hello extends React.Component {
+				render() {
+					return React.createElement('h2', null, `Hello ${this.props.name}`);
+				}
+			}
+		
+			var rootElement =
+			React.createElement('div', {}, 
+				React.createElement('h1', {}, 'Friends'),
+					React.createElement('ul', {},
+						React.createElement('li', {},
+							React.createElement(Hello, {name: 'Alice'}, ''),
+							React.createElement('a', {href: 'mailto:alice@my-friends-in-react.com'}, 'alice@my-friends-in-react.com')
+						),
+						React.createElement('li', {},
+							React.createElement(Hello, {name: 'Bob'}, ''),
+							React.createElement('a', {href: 'mailto:bob@my-friends-in-react.com'}, 'bob@my-friends-in-react.com')
+						)
+					)
+			);
+
+			// Use ReactDOM to render the React Components into the DOM
+			ReactDOM.render(rootElement, document.getElementById('root'))
+		</script>
+	</body>
+</html>

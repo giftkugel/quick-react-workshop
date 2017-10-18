@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Hello Name</title>
+	</head>
+	<body>
+		<div id="root"></div>
+
+		<script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+		<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+		<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+		<script type="text/babel">
+			class Hello extends React.Component {
+				render() {
+					return (
+						<h2>Hello {this.props.name}</h2>
+					);
+				}
+			}
+			
+			ReactDOM.render(<Hello name='Foo' />, document.getElementById('root'));
+		</script>
+
+	</body>
+</html>
