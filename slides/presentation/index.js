@@ -188,6 +188,16 @@ export default class Presentation extends React.Component {
             React
           </Heading>
         </Slide>
+        <Slide id="github">
+          <Heading fit caps>
+            Clone from GitHub
+          </Heading>
+          <Appear>
+            <Text fit>
+              git clone https://github.com/giftkugel/quick-react-workshop.git
+            </Text>
+          </Appear>
+        </Slide>
         <Slide id="lib-react" bgImage={images.lib.replace('/', '')} bgDarken={0.5} bgColor="secondary">
           <Text fit caps textColor="tertiary">
             It's a library
