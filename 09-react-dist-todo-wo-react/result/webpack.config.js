@@ -3,7 +3,7 @@ module.exports = {
     './src/index.js'
   ],
   module: {
-    loaders: [{
+    rules: [{
       test: /\.jsx?$/,
       exclude: /node_modules/,
       loader: 'babel-loader'
@@ -19,5 +19,9 @@ module.exports = {
   },
   devServer: {
     contentBase: './dist',
+  },
+  externals: {      
+    'react': 'React',      
+    'react-dom': 'ReactDOM'
   }
 };
